@@ -10,6 +10,8 @@ exports.getCourse = async(req,reply) => {
     }
 }
 
+
+
 exports.getSingleCourse = async (req,reply) => {
     try {
         const courseId = req.params.id
