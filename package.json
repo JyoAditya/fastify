@@ -1,0 +1,20 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "postgres",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "jyotiraditya",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.27.1",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15"
+  }
+}
