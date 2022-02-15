@@ -5,11 +5,43 @@ const routes = [
     {
         method: 'GET',
         url: '/api/course',
+        schema:{
+            response: {
+                200: {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        properties:{
+                            name: {type:'string'},
+                            coursename: {type:'string'},
+                            coursetype: {type:'string'},
+                            releaseyear:{type:'integer'}
+                        }
+                    }
+                }
+            }
+        },
         handler: courseController.getCourse
     },
     {
         method: 'GET',
         url: '/api/course/:id',
+        schema:{
+            response: {
+                200: {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        properties:{
+                            name: {type:'string'},
+                            coursename: {type:'string'},
+                            coursetype: {type:'string'},
+                            releaseyear:{type:'integer'}
+                        }
+                    }
+                }
+            }
+        },
         handler: courseController.getSingleCourse
     },
     {
