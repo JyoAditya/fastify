@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./src/index.js",
-    "test": "tap --reporter=list --watch"
+    "test": "jest --coverage --verbose"
   },
   "keywords": [
     "no"
@@ -13,19 +13,15 @@
   "author": "jyotiraditya",
   "license": "ISC",
   "dependencies": {
-    "@types/jest": "^27.4.0",
     "fastify": "^3.27.1",
+    "minimist": "^1.2.5",
     "mongoose": "^6.2.1",
     "nodemon": "^2.0.15",
-    "sequelize": "^6.16.1",
-    "ts-jest": "^27.1.3"
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "jest": "^27.5.1",
-    "pino-pretty": "^7.5.1",
-    "supertest": "^6.2.2",
-    "tap": "^15.1.6"
+    "supertest": "^6.2.2"
   }
-  
 }

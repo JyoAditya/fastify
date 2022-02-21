@@ -15,7 +15,8 @@ const routes = [
                             name: {type:'string'},
                             coursename: {type:'string'},
                             coursetype: {type:'string'},
-                            releaseyear:{type:'integer'}
+                            releaseyear:{type:'integer'},
+                            _id: {type: 'string'}
                         }
                     }
                 }
@@ -26,22 +27,6 @@ const routes = [
     {
         method: 'GET',
         url: '/api/course/:id',
-        schema:{
-            response: {
-                200: {
-                    type: 'array',
-                    items: {
-                        type: 'object',
-                        properties:{
-                            name: {type:'string'},
-                            coursename: {type:'string'},
-                            coursetype: {type:'string'},
-                            releaseyear:{type:'integer'}
-                        }
-                    }
-                }
-            }
-        },
         handler: courseController.getSingleCourse
     },
     {
@@ -58,8 +43,8 @@ const routes = [
         method: 'DELETE',
         url: '/api/course/:id',
         handler: courseController.deleteCourse
-    },
-]
+    }
+ ]
 
 
 module.exports = routes
