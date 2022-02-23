@@ -25,6 +25,8 @@ exports.getSingleCourse = async (req,reply) => {
 exports.addCourse = async(req,reply) => {
     try{
         const course = new Course(req.body)
+        // course.save()
+        // return true
         return course.save()
     } catch (error){
         throw error
