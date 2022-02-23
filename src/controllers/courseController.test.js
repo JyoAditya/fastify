@@ -1,6 +1,6 @@
 const Schema = require('../models/course')
 
-const getCourse = require('./courseController');
+const Course = require('./courseController');
 
 describe('creating',() =>{
     it.only('',async()=>{
@@ -10,7 +10,9 @@ describe('creating',() =>{
     // it.create()
     })
     it.only('',async() => {
-        getCourse.getCourse = jest.fn().mockReturnValueOnce()
-
+        Course.getCourse = jest.fn().mockReturnValueOnce()
+    })
+    it.only('',async() => {
+        Course.addCourse = jest.fn().mockReturnValueOnce()
     })
 })
