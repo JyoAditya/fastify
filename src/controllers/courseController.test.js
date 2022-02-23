@@ -9,9 +9,9 @@ describe('creating',() =>{
         })
     // it.create()
     })
-    // test.only('',async() => {
-    //     Course.getCourse = jest.fn().mockReturnValueOnce()
-    // })
+    test.only('',async() => {
+        Course.getCourse = jest.fn().mockReturnValueOnce()
+    })
     // it.only('',async() => {
     //     Course.addCourse = jest.fn().mockReturnValueOnce({
     //         name: "jyo",
@@ -22,23 +22,23 @@ describe('creating',() =>{
     //     })
     //     expect(Course.addCourse).toEqual(200);
     // })
-    it.only('',()=> {
-        Course.addCourse = jest.fn();
-        const value = Course.addCourse({
-            name: "jyo",
-            // "name" : "Jyotiraditya",
-            coursename : "sinha",
-            coursetype : "student",
-            releaseyear : 2023
-        })
-        expect(value).toBe({
-            name: "jyo",
-            // "name" : "Jyotiraditya",
-            coursename : "sinha",
-            coursetype : "student",
-            releaseyear : 2023
-        })
-    })
+    // it.only('',()=> {
+    //     Course.addCourse = jest.fn();
+    //     const value = Course.addCourse({
+    //         name: "jyo",
+    //         // "name" : "Jyotiraditya",
+    //         coursename : "sinha",
+    //         coursetype : "student",
+    //         releaseyear : 2023
+    //     })
+    //     expect(value).toBe({
+    //         name: "jyo",
+    //         // "name" : "Jyotiraditya",
+    //         coursename : "sinha",
+    //         coursetype : "student",
+    //         releaseyear : 2023
+    //     })
+    // })
     // it.only('',async() => {
     //     Course.addCourse = jest.fn().mockReturnValueOnce()
     //     const VALID_REQUEST = {
