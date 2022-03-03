@@ -58,4 +58,32 @@ exports.deleteCourse = async (req,reply) => {
 }
 
 
+// const { default: fastify } = require('fastify');
+// // const course = require('../models/course');
+// const courses = require('../models/course');
 
+// function build(opts = {}) {
+//     const app = fastify(opts)
+//     app.get('/api/course', { schema: courses }, async function (request, reply) {
+//         try {
+//             const course = await courses.find()
+//             return course
+//         } catch (err) {
+//             throw new Error(err)
+
+//         }
+//     })
+//     app.post('/api/course', { schema: courses }, async function (request, reply) {
+//         try {
+//             const course = new courses(req.body)
+//             course.save()
+//             return true
+//             // return course.save()
+//         } catch (error) {
+//             throw error
+//         }
+//     })
+//     return app
+// }
+
+// module.exports = build
